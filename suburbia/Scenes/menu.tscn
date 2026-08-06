@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://de4lm8ersbaqa"]
+
+[ext_resource type="Script" uid="uid://cudf3t1qwril6" path="res://Scenes/menu.gd" id="1_1rerr"]
+
+[node name="TitleScreen" type="Control" unique_id=555474858]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1rerr")
+metadata/_edit_lock_ = true
+
+[node name="Play" type="Button" parent="." unique_id=1269007737]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.48600003
+anchor_right = 0.5
+anchor_bottom = 0.48600003
+offset_left = -97.5
+offset_top = -50.80002
+offset_right = 97.5
+offset_bottom = 51.19998
+grow_horizontal = 2
+grow_vertical = 2
+text = "PLAY"
+
+[node name="Exit" type="Button" parent="." unique_id=441008546]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.671
+anchor_right = 0.5
+anchor_bottom = 0.671
+offset_left = -118.5
+offset_top = -56.799988
+offset_right = 118.5
+offset_bottom = 56.200012
+grow_horizontal = 2
+grow_vertical = 2
+text = "EXIT"
+
+[node name="Label" type="Label" parent="." unique_id=1328240086]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.223
+anchor_right = 0.5
+anchor_bottom = 0.223
+offset_left = -132.0
+offset_top = -53.40001
+offset_right = 132.0
+offset_bottom = 53.59999
+grow_horizontal = 2
+grow_vertical = 2
+text = "SUBURBIA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
