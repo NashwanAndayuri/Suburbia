@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://de4lm8ersbaqa"]
 
 [ext_resource type="Script" uid="uid://cudf3t1qwril6" path="res://Scenes/menu.gd" id="1_1rerr"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="2_cayip"]
+[ext_resource type="FontFile" uid="uid://ccyjybtf2h750" path="res://Assets/Font/Mom«t___.ttf" id="2_xhh6f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_158mb"]
+font = ExtResource("2_xhh6f")
+font_size = 69
 
 [node name="TitleScreen" type="Control" unique_id=555474858]
 layout_mode = 3
@@ -19,12 +25,13 @@ anchor_left = 0.5
 anchor_top = 0.48600003
 anchor_right = 0.5
 anchor_bottom = 0.48600003
-offset_left = -97.5
-offset_top = -50.80002
-offset_right = 97.5
-offset_bottom = 51.19998
+offset_left = -100.0
+offset_top = -29.800018
+offset_right = 95.0
+offset_bottom = 42.19998
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_cayip")
 text = "PLAY"
 
 [node name="Exit" type="Button" parent="." unique_id=441008546]
@@ -34,30 +41,34 @@ anchor_left = 0.5
 anchor_top = 0.671
 anchor_right = 0.5
 anchor_bottom = 0.671
-offset_left = -118.5
-offset_top = -56.799988
-offset_right = 118.5
-offset_bottom = 56.200012
+offset_left = -99.0
+offset_top = -35.799988
+offset_right = 96.0
+offset_bottom = 35.200012
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_cayip")
 text = "EXIT"
 
-[node name="Label" type="Label" parent="." unique_id=1328240086]
+[node name="Title" type="Label" parent="." unique_id=1328240086]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.223
 anchor_right = 0.5
 anchor_bottom = 0.223
-offset_left = -132.0
-offset_top = -53.40001
-offset_right = 132.0
-offset_bottom = 53.59999
+offset_left = -157.0
+offset_top = -59.40001
+offset_right = 152.57944
+offset_bottom = 65.59999
 grow_horizontal = 2
 grow_vertical = 2
 text = "SUBURBIA"
+label_settings = SubResource("LabelSettings_158mb")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Node" type="Node" parent="." unique_id=503495592]
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
