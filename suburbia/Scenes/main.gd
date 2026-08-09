@@ -69,6 +69,7 @@ func latihan():
 
 func _on_button_pressed(): #expedition
 	ekspedisi()
+	$Exp_Cutscene/CanvasLayer.visible = true
 	print("hasil setelah ekspedisi:")
 	print("hari: %d" % hari)
 	print("bahan: %d" % bahan)

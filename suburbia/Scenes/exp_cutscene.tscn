@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_hwxxd"]
 [ext_resource type="Texture2D" uid="uid://bour41bli8vm7" path="res://Cutscenes/placeholder1.jpg" id="2_jiv6j"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="3_jiv6j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hwxxd"]
+bg_color = Color(0, 0, 0, 1)
 
 [node name="Exp_Cutscene" type="Control" unique_id=1322217501]
 layout_mode = 3
@@ -12,7 +16,36 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hwxxd")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1582641238]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1887498020]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=734952640]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hwxxd")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1582641238]
 position = Vector2(296.00003, 318.125)
 scale = Vector2(1.1632948, 1.1632948)
 texture = ExtResource("2_jiv6j")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=2528581]
+offset_left = 152.0
+offset_top = 672.0
+offset_right = 280.0
+offset_bottom = 716.0
+theme = ExtResource("3_jiv6j")
+text = "Proceed"
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=1412057967]
+offset_left = 328.0
+offset_top = 672.0
+offset_right = 456.0
+offset_bottom = 716.0
+theme = ExtResource("3_jiv6j")
+text = "Finish"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
