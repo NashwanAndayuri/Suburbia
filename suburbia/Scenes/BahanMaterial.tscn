@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c07s5e1xtxxxx"]
+
+[ext_resource type="Texture2D" uid="uid://btpxfsc8hhikv" path="res://icon.svg" id="1_hwhp4"]
+
+[node name="BahanMaterial" type="Control" unique_id=1693845962]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="." unique_id=62978527]
+layout_mode = 1
+offset_right = 115.0
+offset_bottom = 23.0
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=741170222]
+position = Vector2(-10.999998, 10)
+scale = Vector2(0.15625, 0.15625)
+texture = ExtResource("1_hwhp4")

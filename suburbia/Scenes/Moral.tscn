@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bva63uo3pkps8"]
+
+[ext_resource type="Texture2D" uid="uid://btpxfsc8hhikv" path="res://icon.svg" id="1_a3cxt"]
+
+[node name="Moral" type="Control" unique_id=1693845962]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="." unique_id=62978527]
+layout_mode = 1
+offset_right = 46.0
+offset_bottom = 23.0
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1520783907]
+position = Vector2(-11.000001, 10.000001)
+scale = Vector2(0.15625, 0.15625)
+texture = ExtResource("1_a3cxt")

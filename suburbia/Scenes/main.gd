@@ -1,12 +1,16 @@
 # Hari, Bahan Material, Uang, Hiburan, Moral, dan Pertahanan.
 
 extends Node2D
+@onready var stats_uang: Label = $CanvasLayer/Control/HBoxContainer/Uang/Label
+@onready var stats_moral: Label = $CanvasLayer/Control/HBoxContainer/Moral/Label
+@onready var stats_pertahanan: Label = $CanvasLayer/Control/HBoxContainer/Pertahanan/Label
+@onready var stats_bahan: Label = $CanvasLayer/Control/HBoxContainer/BahanMaterial/Label
 
-var hari: int
-var bahan: int
-var uang: int
-var moral: int
-var pertahanan: int
+var hari: int = 1
+var bahan: int = 0
+var uang: int = 0
+var moral: int = 0
+var pertahanan: int = 0
 
 
 
@@ -19,6 +23,10 @@ func _ready() -> void:
 	moral = 100
 	pertahanan = 100
 	
+	stats_uang.text = "%s" % uang
+	stats_bahan.text = "%s" % bahan
+	stats_moral.text = "%s" % moral
+	stats_pertahanan.text = "%s" % pertahanan
 	print("hari: %d" % hari)
 	print("bahan: %d" % bahan)
 	print("uang: %d" % uang)
@@ -67,6 +75,10 @@ func _on_button_pressed() -> void: #expedition
 	print("uang: %d" % uang)
 	print("moral: %d" % moral)
 	print("pertahanan: %d" % pertahanan)
+	stats_uang.text = "%s" % uang
+	stats_bahan.text = "%s" % bahan
+	stats_moral.text = "%s" % moral
+	stats_pertahanan.text = "%s" % pertahanan
 
 
 
@@ -78,6 +90,10 @@ func _on_button_2_pressed() -> void: #trade
 	print("uang: %d" % uang)
 	print("moral: %d" % moral)
 	print("pertahanan: %d" % pertahanan)
+	stats_uang.text = "%s" % uang
+	stats_bahan.text = "%s" % bahan
+	stats_moral.text = "%s" % moral
+	stats_pertahanan.text = "%s" % pertahanan
 
 
 func _on_train_pressed() -> void: #train
@@ -88,6 +104,10 @@ func _on_train_pressed() -> void: #train
 	print("uang: %d" % uang)
 	print("moral: %d" % moral)
 	print("pertahanan: %d" % pertahanan)
+	stats_uang.text = "%s" % uang
+	stats_bahan.text = "%s" % bahan
+	stats_moral.text = "%s" % moral
+	stats_pertahanan.text = "%s" % pertahanan
 
 
 
@@ -99,3 +119,7 @@ func _on_entertain_pressed() -> void: #entertain
 	print("uang: %d" % uang)
 	print("moral: %d" % moral)
 	print("pertahanan: %d" % pertahanan)
+	stats_uang.text = "%s" % uang
+	stats_bahan.text = "%s" % bahan
+	stats_moral.text = "%s" % moral
+	stats_pertahanan.text = "%s" % pertahanan

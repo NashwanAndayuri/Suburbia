@@ -1,37 +1,93 @@
 [gd_scene format=3 uid="uid://b2gqxu6jxfg4a"]
 
 [ext_resource type="Script" uid="uid://bpec8imxci7ep" path="res://Scenes/main.gd" id="1_bo1nx"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://c07s5e1xtxxxx" path="res://Scenes/BahanMaterial.tscn" id="3_6bp64"]
+[ext_resource type="PackedScene" uid="uid://bva63uo3pkps8" path="res://Scenes/Moral.tscn" id="5_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://3w0afhn5tgpu" path="res://Scenes/Pertahanan.tscn" id="6_hptm8"]
+[ext_resource type="PackedScene" uid="uid://drppl2nwtmdkb" path="res://Scenes/uang.tscn" id="7_d1ilt"]
 
 [node name="Main" type="Node2D" unique_id=1640240039]
 script = ExtResource("1_bo1nx")
 
 [node name="Expedition" type="Button" parent="." unique_id=9114897]
-offset_left = 26.0
-offset_top = 419.0
-offset_right = 189.0
-offset_bottom = 536.0
+offset_left = 136.0
+offset_top = 555.0
+offset_right = 289.0
+offset_bottom = 624.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bo1nx")
 text = "Expedisi"
+metadata/_edit_use_anchors_ = true
 
 [node name="Trade" type="Button" parent="." unique_id=674680222]
-offset_left = 235.0
-offset_top = 418.0
-offset_right = 522.0
-offset_bottom = 530.0
+offset_left = 136.0
+offset_top = 643.0
+offset_right = 287.0
+offset_bottom = 713.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bo1nx")
 text = "Barter"
+metadata/_edit_use_anchors_ = true
 
 [node name="Train" type="Button" parent="." unique_id=1759160542]
-offset_left = 271.0
-offset_top = 534.0
-offset_right = 571.0
-offset_bottom = 668.0
+offset_left = 312.0
+offset_top = 643.0
+offset_right = 464.23883
+offset_bottom = 711.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bo1nx")
 text = "Latihan"
+metadata/_edit_use_anchors_ = true
 
 [node name="Entertain" type="Button" parent="." unique_id=163903556]
-offset_left = 32.0
-offset_top = 564.0
-offset_right = 239.0
-offset_bottom = 643.0
+offset_left = 312.0
+offset_top = 555.0
+offset_right = 461.0
+offset_bottom = 624.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bo1nx")
 text = "Hiburan"
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=687473477]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=618824189]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=359919439]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.0
+offset_right = 172.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/separation = 100
+
+[node name="BahanMaterial" parent="CanvasLayer/Control/HBoxContainer" unique_id=1693845962 instance=ExtResource("3_6bp64")]
+layout_mode = 2
+
+[node name="Moral" parent="CanvasLayer/Control/HBoxContainer" unique_id=166270778 instance=ExtResource("5_ynf5e")]
+layout_mode = 2
+
+[node name="Pertahanan" parent="CanvasLayer/Control/HBoxContainer" unique_id=618708387 instance=ExtResource("6_hptm8")]
+layout_mode = 2
+
+[node name="Uang" parent="CanvasLayer/Control/HBoxContainer" unique_id=2122201464 instance=ExtResource("7_d1ilt")]
+layout_mode = 2
 
 [connection signal="pressed" from="Expedition" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Trade" to="." method="_on_button_2_pressed"]

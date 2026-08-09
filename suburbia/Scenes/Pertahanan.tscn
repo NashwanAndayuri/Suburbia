@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://3w0afhn5tgpu"]
+
+[ext_resource type="Texture2D" uid="uid://btpxfsc8hhikv" path="res://icon.svg" id="1_0xx5q"]
+
+[node name="Pertahanan" type="Control" unique_id=1693845962]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="." unique_id=62978527]
+layout_mode = 1
+offset_right = 91.0
+offset_bottom = 23.0
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1731503788]
+position = Vector2(-10.999998, 10)
+scale = Vector2(0.15625, 0.15625)
+texture = ExtResource("1_0xx5q")
