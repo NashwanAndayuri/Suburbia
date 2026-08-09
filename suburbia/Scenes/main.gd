@@ -6,14 +6,12 @@ extends Node2D
 @onready var stats_pertahanan: Label = $CanvasLayer/Control/HBoxContainer/Pertahanan/Label
 @onready var stats_bahan: Label = $CanvasLayer/Control/HBoxContainer/BahanMaterial/Label
 
+
 var hari: int = 1
 var bahan: int = 0
 var uang: int = 0
 var moral: int = 0
 var pertahanan: int = 0
-
-
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -49,6 +47,8 @@ func ekspedisi():
 		moral -=8
 		bahan += 10
 
+
+
 func berniaga():
 	if bahan > 5 and moral > 5:
 		bahan -= 5
@@ -67,7 +67,7 @@ func latihan():
 		moral -= 10
 		pertahanan += 14
 
-func _on_button_pressed() -> void: #expedition
+func _on_button_pressed(): #expedition
 	ekspedisi()
 	print("hasil setelah ekspedisi:")
 	print("hari: %d" % hari)
@@ -79,6 +79,7 @@ func _on_button_pressed() -> void: #expedition
 	stats_bahan.text = "%s" % bahan
 	stats_moral.text = "%s" % moral
 	stats_pertahanan.text = "%s" % pertahanan
+
 
 
 

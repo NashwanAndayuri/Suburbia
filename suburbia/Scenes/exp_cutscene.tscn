@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://blk040ksnih2w"]
+
+[ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_hwxxd"]
+[ext_resource type="Texture2D" uid="uid://bour41bli8vm7" path="res://Cutscenes/placeholder1.jpg" id="2_jiv6j"]
+
+[node name="Exp_Cutscene" type="Control" unique_id=1322217501]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hwxxd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1582641238]
+position = Vector2(296.00003, 318.125)
+scale = Vector2(1.1632948, 1.1632948)
+texture = ExtResource("2_jiv6j")
