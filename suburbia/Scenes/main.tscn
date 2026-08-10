@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bvb00omyoak5e" path="res://Scenes/exp_morale.tscn" id="8_344ge"]
 [ext_resource type="PackedScene" uid="uid://cng3qk3ghf6kt" path="res://Scenes/exp_trade.tscn" id="9_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://bycb46373nh4o" path="res://Scenes/exp_train.tscn" id="10_hptm8"]
+[ext_resource type="PackedScene" uid="uid://c1gdhyno4s70w" path="res://Scenes/exp_nextday.tscn" id="11_d1ilt"]
 
 [node name="Main" type="Node2D" unique_id=1640240039]
 script = ExtResource("1_bo1nx")
@@ -24,6 +25,16 @@ size_flags_vertical = 4
 theme = ExtResource("2_bo1nx")
 text = "Expedisi"
 metadata/_edit_use_anchors_ = true
+
+[node name="endTurn" type="Button" parent="." unique_id=1605456481]
+offset_left = 234.0
+offset_top = 722.0
+offset_right = 383.0
+offset_bottom = 791.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_bo1nx")
+text = "End Turn"
 
 [node name="Trade" type="Button" parent="." unique_id=674680222]
 offset_left = 136.0
@@ -101,7 +112,10 @@ layout_mode = 2
 
 [node name="Exp_train" parent="." unique_id=1869766374 instance=ExtResource("10_hptm8")]
 
+[node name="Exp_nextDay" parent="." unique_id=425571734 instance=ExtResource("11_d1ilt")]
+
 [connection signal="pressed" from="Expedition" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="endTurn" to="." method="_on_end_turn_pressed"]
 [connection signal="pressed" from="Trade" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Train" to="." method="_on_train_pressed"]
 [connection signal="pressed" from="Entertain" to="." method="_on_entertain_pressed"]

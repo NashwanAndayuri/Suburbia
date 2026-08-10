@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://c1gdhyno4s70w"]
+
+[ext_resource type="Script" uid="uid://w7a82m2m36d2" path="res://Scenes/exp_nextday.gd" id="1_xoeq0"]
+[ext_resource type="Texture2D" uid="uid://bfbfaud8ra2oh" path="res://Cutscenes/Wow_.jpg" id="2_xoeq0"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="3_8p1ra"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2peb"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" unique_id=425571734]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xoeq0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1250156121]
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1826158969]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u2peb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1518143820]
+position = Vector2(307, 327)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_xoeq0")
+
+[node name="stats" type="Button" parent="CanvasLayer" unique_id=1653600639]
+offset_left = 152.0
+offset_top = 672.0
+offset_right = 280.0
+offset_bottom = 716.0
+theme = ExtResource("3_8p1ra")
+text = "Stats"
+metadata/_edit_use_anchors_ = true
+
+[node name="finish" type="Button" parent="CanvasLayer" unique_id=599065490]
+offset_left = 328.0
+offset_top = 672.0
+offset_right = 456.0
+offset_bottom = 716.0
+theme = ExtResource("3_8p1ra")
+text = "Finish"
+metadata/_edit_use_anchors_ = true
+
+[node name="back" type="Button" parent="CanvasLayer" unique_id=1686529676]
+visible = false
+offset_left = 151.0
+offset_top = 674.0
+offset_right = 279.0
+offset_bottom = 718.0
+theme = ExtResource("3_8p1ra")
+text = "Back"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/stats" to="." method="_on_stats_pressed"]
+[connection signal="pressed" from="CanvasLayer/finish" to="." method="_on_finish_pressed"]
+[connection signal="pressed" from="CanvasLayer/back" to="." method="_on_back_pressed"]
