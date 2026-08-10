@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://3w0afhn5tgpu" path="res://Scenes/Pertahanan.tscn" id="6_hptm8"]
 [ext_resource type="PackedScene" uid="uid://blk040ksnih2w" path="res://Scenes/exp_cutscene.tscn" id="7_6bp64"]
 [ext_resource type="PackedScene" uid="uid://drppl2nwtmdkb" path="res://Scenes/uang.tscn" id="7_d1ilt"]
+[ext_resource type="PackedScene" uid="uid://bvb00omyoak5e" path="res://Scenes/exp_morale.tscn" id="8_344ge"]
+[ext_resource type="PackedScene" uid="uid://cng3qk3ghf6kt" path="res://Scenes/exp_trade.tscn" id="9_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://bycb46373nh4o" path="res://Scenes/exp_train.tscn" id="10_hptm8"]
 
 [node name="Main" type="Node2D" unique_id=1640240039]
 script = ExtResource("1_bo1nx")
@@ -91,6 +94,12 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Exp_Cutscene" parent="." unique_id=1322217501 instance=ExtResource("7_6bp64")]
+
+[node name="Exp_morale" parent="." unique_id=1320124094 instance=ExtResource("8_344ge")]
+
+[node name="Exp_trade" parent="." unique_id=569432067 instance=ExtResource("9_ynf5e")]
+
+[node name="Exp_train" parent="." unique_id=1869766374 instance=ExtResource("10_hptm8")]
 
 [connection signal="pressed" from="Expedition" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Trade" to="." method="_on_button_2_pressed"]

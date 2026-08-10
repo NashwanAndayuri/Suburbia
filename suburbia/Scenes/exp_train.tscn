@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bycb46373nh4o"]
+
+[ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_i3ofv"]
+[ext_resource type="Texture2D" uid="uid://2gwwqfhq4g1q" path="res://Cutscenes/ENDFIELD_SHARE_1770194514.png" id="2_emhdc"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="3_8tmtd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3gga"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Exp_train" type="Control" unique_id=1869766374]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i3ofv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1066448318]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1385194677]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j3gga")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=461307566]
+position = Vector2(294, 339.00003)
+scale = Vector2(0.24996844, 0.24996845)
+texture = ExtResource("2_emhdc")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=808651981]
+offset_left = 152.0
+offset_top = 672.0
+offset_right = 280.0
+offset_bottom = 716.0
+theme = ExtResource("3_8tmtd")
+text = "Proceed"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=865863821]
+offset_left = 328.0
+offset_top = 672.0
+offset_right = 456.0
+offset_bottom = 716.0
+theme = ExtResource("3_8tmtd")
+text = "Finish"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]

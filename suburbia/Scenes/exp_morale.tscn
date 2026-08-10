@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bvb00omyoak5e"]
+
+[ext_resource type="Texture2D" uid="uid://cfvt4lxo2nop7" path="res://Cutscenes/placeholder2.jpg" id="1_jypsu"]
+[ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_w2y6v"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="2_w2y6v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2aps"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Exp_morale" type="Control" unique_id=1320124094]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w2y6v")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1053702188]
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1814842443]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_x2aps")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1125576799]
+position = Vector2(303.99994, 320)
+scale = Vector2(0.46887562, 0.46887565)
+texture = ExtResource("1_jypsu")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=231771048]
+offset_left = 152.0
+offset_top = 672.0
+offset_right = 280.0
+offset_bottom = 716.0
+theme = ExtResource("2_w2y6v")
+text = "Proceed"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=903359942]
+offset_left = 328.0
+offset_top = 672.0
+offset_right = 456.0
+offset_bottom = 716.0
+theme = ExtResource("2_w2y6v")
+text = "Finish"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]

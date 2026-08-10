@@ -86,6 +86,7 @@ func _on_button_pressed(): #expedition
 
 func _on_button_2_pressed() -> void: #trade
 	berniaga()
+	$Exp_trade/CanvasLayer.visible = true
 	print("hasil setelah berniaga:")
 	print("hari: %d" % hari)
 	print("bahan: %d" % bahan)
@@ -100,6 +101,7 @@ func _on_button_2_pressed() -> void: #trade
 
 func _on_train_pressed() -> void: #train
 	latihan()
+	$Exp_train/CanvasLayer.visible = true
 	print("hasil setelah latihan:")
 	print("hari: %d" % hari)
 	print("bahan: %d" % bahan)
@@ -115,6 +117,7 @@ func _on_train_pressed() -> void: #train
 
 func _on_entertain_pressed() -> void: #entertain
 	hiburan()
+	$Exp_morale/CanvasLayer.visible = true
 	print("hasil setelah hiburan:")
 	print("hari: %d" % hari)
 	print("bahan: %d" % bahan)

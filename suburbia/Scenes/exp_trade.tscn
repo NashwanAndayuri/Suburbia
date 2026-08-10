@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cng3qk3ghf6kt"]
+
+[ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_fg65w"]
+[ext_resource type="Texture2D" uid="uid://cnr0mwcde4je7" path="res://Cutscenes/placeholder3.jpg" id="2_lbgaa"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="3_25vvl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpbqk"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Exp_trade" type="Control" unique_id=569432067]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fg65w")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1671269864]
+visible = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1866867543]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bpbqk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1504174696]
+position = Vector2(301, 341)
+scale = Vector2(0.40563357, 0.4056336)
+texture = ExtResource("2_lbgaa")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1885204191]
+offset_left = 152.0
+offset_top = 672.0
+offset_right = 280.0
+offset_bottom = 716.0
+theme = ExtResource("3_25vvl")
+text = "Proceed"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=1920110075]
+offset_left = 328.0
+offset_top = 672.0
+offset_right = 456.0
+offset_bottom = 716.0
+theme = ExtResource("3_25vvl")
+text = "Finish"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]

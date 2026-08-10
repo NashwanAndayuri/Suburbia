@@ -17,6 +17,7 @@ grow_vertical = 2
 script = ExtResource("1_hwxxd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1887498020]
+visible = false
 
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=734952640]
 anchors_preset = 15
@@ -25,6 +26,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_hwxxd")
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1582641238]
 position = Vector2(296.00003, 318.125)
@@ -38,6 +40,7 @@ offset_right = 280.0
 offset_bottom = 716.0
 theme = ExtResource("3_jiv6j")
 text = "Proceed"
+metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="CanvasLayer" unique_id=1412057967]
 offset_left = 328.0
@@ -46,6 +49,7 @@ offset_right = 456.0
 offset_bottom = 716.0
 theme = ExtResource("3_jiv6j")
 text = "Finish"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
