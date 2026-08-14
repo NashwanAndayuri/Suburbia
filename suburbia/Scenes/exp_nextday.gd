@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_finish_pressed() -> void:
-	pass # Replace with function body.
+	$CanvasLayer.visible = false
 
 
 func _on_stats_pressed() -> void:

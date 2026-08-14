@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cdy13dyfb4mqm"
+path="res://.godot/imported/morale.dialogue-491a81bb6242aaf71555b64e7240073a.tres"
+
+[deps]
+
+source_file="res://Dialogues/morale.dialogue"
+dest_files=["res://.godot/imported/morale.dialogue-491a81bb6242aaf71555b64e7240073a.tres"]
+
+[params]
+
+defaults=true

@@ -11,7 +11,9 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/main.tscn")
+	get_tree().change_scene_to_file("res://Cutscenes/opening.tscn")
+	DialogueManager.show_example_dialogue_balloon(load("res://Dialogues/opening.dialogue"), "start")
+	
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()

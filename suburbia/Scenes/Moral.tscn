@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bva63uo3pkps8"]
 
-[ext_resource type="Texture2D" uid="uid://btpxfsc8hhikv" path="res://icon.svg" id="1_a3cxt"]
+[ext_resource type="Texture2D" uid="uid://bck0be1fau5lt" path="res://Assets/UIElements-32-Blue.png" id="1_a3cxt"]
 
 [node name="Moral" type="Control" unique_id=1693845962]
 layout_mode = 3
@@ -16,6 +16,8 @@ offset_bottom = 23.0
 text = "0"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1520783907]
-position = Vector2(-11.000001, 10.000001)
-scale = Vector2(0.15625, 0.15625)
+position = Vector2(-10.999985, 12)
+scale = Vector2(0.7826909, 0.7826911)
 texture = ExtResource("1_a3cxt")
+region_enabled = true
+region_rect = Rect2(358, 230, 19, 20)

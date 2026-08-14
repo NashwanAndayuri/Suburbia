@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://blk040ksnih2w"]
 
 [ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_hwxxd"]
-[ext_resource type="Texture2D" uid="uid://bour41bli8vm7" path="res://Cutscenes/placeholder1.jpg" id="2_jiv6j"]
+[ext_resource type="Texture2D" uid="uid://dbh08drgp1avd" path="res://Assets/22.7.26_2.png" id="2_jiv6j"]
 [ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="3_jiv6j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hwxxd"]
@@ -29,8 +29,8 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_hwxxd")
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1582641238]
-position = Vector2(296.00003, 318.125)
-scale = Vector2(1.1632948, 1.1632948)
+position = Vector2(304, 344)
+scale = Vector2(0.13829336, 0.13829336)
 texture = ExtResource("2_jiv6j")
 
 [node name="Button" type="Button" parent="CanvasLayer" unique_id=2528581]

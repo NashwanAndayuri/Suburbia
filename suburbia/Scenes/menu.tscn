@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://de4lm8ersbaqa"]
 
 [ext_resource type="Script" uid="uid://cudf3t1qwril6" path="res://Scenes/menu.gd" id="1_1rerr"]
+[ext_resource type="Texture2D" uid="uid://cjrye35lbwcgk" path="res://Assets/24.7.26.png" id="2_158mb"]
 [ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="2_cayip"]
 [ext_resource type="FontFile" uid="uid://ccyjybtf2h750" path="res://Assets/Font/Mom«t___.ttf" id="2_xhh6f"]
 
@@ -17,6 +18,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1rerr")
 metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1445684112]
+position = Vector2(262.99976, 384.00003)
+scale = Vector2(0.35806453, 0.3580645)
+texture = ExtResource("2_158mb")
 
 [node name="Play" type="Button" parent="." unique_id=1269007737]
 layout_mode = 1
@@ -67,8 +73,6 @@ text = "SUBURBIA"
 label_settings = SubResource("LabelSettings_158mb")
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Node" type="Node" parent="." unique_id=503495592]
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

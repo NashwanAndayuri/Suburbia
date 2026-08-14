@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bycb46373nh4o"]
 
-[ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_i3ofv"]
-[ext_resource type="Texture2D" uid="uid://2gwwqfhq4g1q" path="res://Cutscenes/ENDFIELD_SHARE_1770194514.png" id="2_emhdc"]
+[ext_resource type="Script" uid="uid://cyvlt2jnoyneg" path="res://Scenes/exp_train.gd" id="1_i3ofv"]
+[ext_resource type="Texture2D" uid="uid://b5ex6v33ng08n" path="res://Assets/22.7.26.png" id="2_i3ofv"]
 [ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="3_8tmtd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3gga"]
@@ -29,9 +29,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_j3gga")
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=461307566]
-position = Vector2(294, 339.00003)
-scale = Vector2(0.24996844, 0.24996845)
-texture = ExtResource("2_emhdc")
+position = Vector2(304, 352)
+scale = Vector2(0.1353192, 0.13531923)
+texture = ExtResource("2_i3ofv")
 
 [node name="Button" type="Button" parent="CanvasLayer" unique_id=808651981]
 offset_left = 152.0

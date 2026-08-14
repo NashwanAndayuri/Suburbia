@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bvb00omyoak5e"]
 
-[ext_resource type="Texture2D" uid="uid://cfvt4lxo2nop7" path="res://Cutscenes/placeholder2.jpg" id="1_jypsu"]
-[ext_resource type="Script" uid="uid://csp7cfwaxn8wb" path="res://Scenes/exp_cutscene.gd" id="1_w2y6v"]
+[ext_resource type="Script" uid="uid://c7hhk48ss8hv4" path="res://Scenes/exp_morale.gd" id="1_w2y6v"]
 [ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="2_w2y6v"]
+[ext_resource type="Texture2D" uid="uid://ocmlxdup0nj0" path="res://Assets/23.7.26.png" id="2_x2aps"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2aps"]
 bg_color = Color(0, 0, 0, 1)
@@ -29,9 +29,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_x2aps")
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1125576799]
-position = Vector2(303.99994, 320)
-scale = Vector2(0.46887562, 0.46887565)
-texture = ExtResource("1_jypsu")
+position = Vector2(304, 351.99997)
+scale = Vector2(0.14610057, 0.14610058)
+texture = ExtResource("2_x2aps")
 
 [node name="Button" type="Button" parent="CanvasLayer" unique_id=231771048]
 offset_left = 152.0

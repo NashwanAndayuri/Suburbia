@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://3w0afhn5tgpu"]
 
-[ext_resource type="Texture2D" uid="uid://btpxfsc8hhikv" path="res://icon.svg" id="1_0xx5q"]
+[ext_resource type="Texture2D" uid="uid://bck0be1fau5lt" path="res://Assets/UIElements-32-Blue.png" id="1_0xx5q"]
 
 [node name="Pertahanan" type="Control" unique_id=1693845962]
 layout_mode = 3
@@ -16,6 +16,8 @@ offset_bottom = 23.0
 text = "0"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1731503788]
-position = Vector2(-10.999998, 10)
-scale = Vector2(0.15625, 0.15625)
+position = Vector2(-12.000002, 11)
+scale = Vector2(0.7208803, 0.7208803)
 texture = ExtResource("1_0xx5q")
+region_enabled = true
+region_rect = Rect2(485, 165, 22, 22)

@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://djweousa1jq78"]
+
+[ext_resource type="Script" uid="uid://ykw6c8fda5oi" path="res://Cutscenes/opening.gd" id="1_0yq73"]
+[ext_resource type="Theme" uid="uid://12sg1kq7ae46" path="res://Buttons/button_menu.tres" id="2_wkmqo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7oqdl"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="opening" type="Control" unique_id=1264530609]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0yq73")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=392579995]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1654093010]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7oqdl")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1351761888]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.912
+anchor_right = 0.5
+anchor_bottom = 0.912
+offset_left = -83.0
+offset_top = -44.0
+offset_right = 83.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_wkmqo")
+text = "Lanjutkan"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
